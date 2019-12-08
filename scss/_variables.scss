@@ -1,0 +1,8 @@
+$nav-color: purple;
+$text-white: #fff;
+
+@mixin hide_ul($screen_size) {
+  @media screen and (max-width: $screen_size) {
+    display: none;
+  }
+}

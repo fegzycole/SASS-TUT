@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'reset';
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  @extend .flex-between;
+
+  width: 100%;
+  align-items: center;
+  color: $text-white;
+  background-color: $nav-color;
+  padding: 10px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  ul {
+    @include hide_ul(500px);
+
+    @extend .flex-between;
+
+    list-style-type: none;
+
+    li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flex-between,
+nav,
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: purple;
+  padding: 10px;
+}
+
+nav h3 {
+  font-size: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    display: none;
+  }
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
